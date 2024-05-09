@@ -1,0 +1,11 @@
+framework module CustomSDK {
+  umbrella header "CustomSDK.h"
+  export *
+
+  module * { export * }
+}
+
+module CustomSDK.Swift {
+  header "CustomSDK-Swift.h"
+  requires objc
+}
